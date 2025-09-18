@@ -22,17 +22,17 @@ print(arr)
 
 
 
-# # Keep the unique elements in the begining of the sorted array.
-# def unique_first(arr):
-#     i = 1
-#     last_ele = arr[0]
-#     for j in range(1,len(arr)):
-#         if arr[j]!=last_ele:
-#             last_ele = arr[j]
-#             arr[i], arr[j]=arr[j], arr[i]
-#             i+=1
-#     # return arr
-#     return arr[:i]
+# Keep the unique elements in the begining of the sorted array.
+def unique_first(arr):
+    i = 1
+    last_ele = arr[0]
+    for j in range(1,len(arr)):
+        if arr[j]!=last_ele:
+            last_ele = arr[j]
+            arr[i], arr[j]=arr[j], arr[i]
+            i+=1
+    # return arr
+    return arr[:i]
 
 
 # arr = [1,1,2,2,2,3,3,4]
